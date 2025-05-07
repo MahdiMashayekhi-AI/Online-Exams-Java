@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.OnlineExams" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/main</item>
+        <item name="colorPrimaryVariant">@color/main_variant</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/accent1</item>
+        <item name="colorSecondaryVariant">@color/accent2</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:statusBarColor">@color/main</item>
+        <item name="android:windowBackground">@color/background_light</item>
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorOnSurface">@color/text_primary_light</item>
+        <item name="android:textColorPrimary">@color/text_primary_light</item>
+    </style>
+</resources>

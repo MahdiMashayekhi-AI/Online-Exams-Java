@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    tools:context=".Home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp">
+
+        <ImageView
+            android:id="@+id/signout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/signout"
+            android:scaleType="centerInside"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/welcome"
+            android:layout_toRightOf="@+id/signout"
+            android:fontFamily="@font/vazir" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+            android:padding="20dp"
+            android:gravity="top|center_horizontal"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <!-- شروع آزمون -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@drawable/grey_background"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="30dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textSize="22sp"
+                            android:padding="10dp"
+                            android:textColor="@color/main"
+                            android:text="@string/start_quiz"
+                            android:layout_marginBottom="10dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/vazir"
+                            tools:ignore="RtlHardcoded" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/startQuiz"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:padding="10dp"
+                                android:background="@drawable/button_background"
+                                android:textColor="@color/white"
+                                android:textAllCaps="false"
+                                android:text="@string/start"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/vazir" />
+
+                            <EditText
+                                android:id="@+id/start_quiz_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:padding="10dp"
+                                android:background="@drawable/white_edittext"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/main_variant"
+                                android:inputType="text"
+                                android:imeOptions="actionDone"
+                                android:layout_marginBottom="10dp"
+                                android:hint="@string/quiz_id_hint"
+                                android:layout_toRightOf="@+id/startQuiz"
+                                android:fontFamily="@font/vazir" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <!-- آزمون‌های حل‌شده -->
+                    <RelativeLayout
+                        android:id="@+id/solvedQuizzes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@drawable/grey_background"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/arrow"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:text="@string/your_solved_quizzes"
+                            android:textColor="@color/main"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/vazir" />
+                    </RelativeLayout>
+
+                    <!-- تعداد سوالات -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="10dp"
+                        android:background="@drawable/grey_background"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:padding="10dp"
+                            android:textColor="@color/main"
+                            android:text="@string/total_questions"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/vazir" />
+
+                        <TextView
+                            android:id="@+id/total_questions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/circle"
+                            android:fontFamily="@font/vazir"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="000"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- امتیاز کل -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="10dp"
+                        android:background="@drawable/grey_background"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:padding="10dp"
+                            android:textColor="@color/main"
+                            android:text="@string/total_points"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/vazir" />
+
+                        <TextView
+                            android:id="@+id/total_points"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:padding="10dp"
+                            android:textColor="@color/white"
+                            android:text="000"
+                            android:textStyle="bold"
+                            android:background="@drawable/circle"
+                            android:fontFamily="@font/vazir"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@drawable/grey_background"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textSize="22sp"
+                            android:padding="10dp"
+                            android:textColor="@color/main"
+                            android:text="@string/create_quiz"
+                            android:layout_marginBottom="10dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/vazir"
+                            tools:ignore="RtlHardcoded" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/createQuiz"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:padding="10dp"
+                                android:background="@drawable/button_background"
+                                android:textColor="@color/white"
+                                android:textAllCaps="false"
+                                android:text="@string/create"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/vazir"
+                                tools:ignore="RtlHardcoded" />
+
+                            <EditText
+                                android:id="@+id/quiz_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:padding="10dp"
+                                android:background="@drawable/white_edittext"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/main_variant"
+                                android:inputType="text"
+                                android:imeOptions="actionDone"
+                                android:layout_marginBottom="10dp"
+                                android:hint="@string/quiz_title_hint"
+                                android:layout_toRightOf="@+id/createQuiz"
+                                android:fontFamily="@font/vazir"
+                                tools:ignore="RtlHardcoded" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/your_quizzes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@drawable/grey_background"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/arrow"
+                            android:scaleType="centerInside"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:text="@string/your_quizzes"
+                            android:textColor="@color/main"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/vazir" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </FrameLayout>
+</LinearLayout>

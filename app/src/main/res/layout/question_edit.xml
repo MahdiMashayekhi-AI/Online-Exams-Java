@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/vazir"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:textDirection="rtl"
+    android:paddingHorizontal="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/grey_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:hint="سؤال"
+            android:padding="12dp"
+            android:textColor="@color/main"
+            android:textColorHint="@color/main"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/vazir"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/option1et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="گزینه ۱"
+                    android:background="@color/transparent"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:paddingVertical="8dp"
+                    android:textColorHint="@color/black"
+                    android:fontFamily="@font/vazir"/>
+
+                <EditText
+                    android:id="@+id/option2et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="گزینه ۲"
+                    android:background="@color/transparent"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:paddingVertical="8dp"
+                    android:textColorHint="@color/black"
+                    android:fontFamily="@font/vazir"/>
+
+                <EditText
+                    android:id="@+id/option3et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="گزینه ۳"
+                    android:background="@color/transparent"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:paddingVertical="8dp"
+                    android:textColorHint="@color/black"
+                    android:fontFamily="@font/vazir"/>
+
+                <EditText
+                    android:id="@+id/option4et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="گزینه ۴"
+                    android:background="@color/transparent"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:paddingVertical="8dp"
+                    android:textColorHint="@color/black"
+                    android:fontFamily="@font/vazir"/>
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/option1rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/main"
+                    android:textSize="18sp"
+                    android:paddingVertical="10dp" />
+
+                <RadioButton
+                    android:id="@+id/option2rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/main"
+                    android:textSize="18sp"
+                    android:paddingVertical="10dp" />
+
+                <RadioButton
+                    android:id="@+id/option3rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/main"
+                    android:textSize="18sp"
+                    android:paddingVertical="10dp" />
+
+                <RadioButton
+                    android:id="@+id/option4rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/main"
+                    android:textSize="18sp"
+                    android:paddingVertical="10dp" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/new_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/grey_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="سؤال جدید"
+            android:textColor="@color/main"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/vazir"/>
+    </LinearLayout>
+
+</LinearLayout>

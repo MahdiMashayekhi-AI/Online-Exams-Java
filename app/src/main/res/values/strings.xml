@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Online Exams</string>
+    <string name="login">ورود</string>
+    <string name="email">ایمیل</string>
+    <string name="password">رمز عبور</string>
+    <string name="signup">ایجاد حساب کاربری</string>
+    <string name="create_account">ثبت نام</string>
+    <string name="first_name">نام</string>
+    <string name="last_name">نام خانوادگی</string>
+    <string name="confirm_password">تأیید رمز عبور</string>
+    <string name="already_have_account">حساب دارید؟ وارد شوید</string>
+    <string name="welcome">خوش آمدید!</string>
+    <string name="start_quiz">شروع آزمون</string>
+    <string name="quiz_id_hint">شناسه آزمون یا عنوان</string>
+    <string name="start">شروع</string>
+    <string name="your_solved_quizzes">آزمون‌های حل‌شده شما</string>
+    <string name="total_questions">تعداد سوالات</string>
+    <string name="total_points">امتیاز کل</string>
+    <string name="create_quiz">ساخت آزمون</string>
+    <string name="quiz_title_hint">عنوان آزمون</string>
+    <string name="create">ایجاد</string>
+    <string name="your_quizzes">آزمون‌های شما</string>
+    <string name="exam_title">آزمون</string>
+    <string name="exam_editor_title">ویرایش آزمون</string>
+    <string name="submit">ثبت</string>
+    <string name="exam">آزمون</string>
+    <string name="total_score">امتیاز کل: ۲۰ از ۲۰</string>
+    <string name="sample_question">سوال نمونه اینجاست</string>
+    <string name="option1">گزینه اول</string>
+    <string name="option2">گزینه دوم</string>
+    <string name="option3">گزینه سوم</string>
+    <string name="option4">گزینه چهارم</string>
+    <string name="correct_answer">پاسخ صحیح</string>
+    <string name="quiz_text">آزمون</string>
+    <string name="grade_text">۲۰/۲۰</string>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+</resources>

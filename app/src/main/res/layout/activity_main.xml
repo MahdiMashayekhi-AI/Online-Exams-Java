@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:gravity="top|center_horizontal"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- صفحه لاگین -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:fontFamily="@font/vazir"
+        android:text="@string/login"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <!-- بخش فرم ورود -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/grey_edittext"
+            android:fontFamily="@font/vazir"
+            android:hint="@string/email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textColorHint="@color/main_variant"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/grey_edittext"
+            android:fontFamily="@font/vazir"
+            android:gravity="right|center_vertical"
+            android:hint="@string/password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textColorHint="@color/main_variant"
+            android:textSize="20dp"
+            tools:ignore="RtlCompat,RtlHardcoded,SpUsage" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/vazir"
+            android:padding="10dp"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vazir"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/signup"
+            android:textColor="@color/main"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <!-- ProgressBar برای نشان دادن وضعیت ورود -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:indeterminate="true" />
+
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>

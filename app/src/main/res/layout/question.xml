@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:background="@drawable/grey_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginBottom="16dp"
+    android:layout_marginTop="16dp"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:fontFamily="@font/vazir">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:textColor="@color/main"
+        android:text="سؤال"
+        android:textStyle="bold"
+        android:fontFamily="@font/vazir" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:buttonTint="@color/main"
+            android:text="گزینه ۱"
+            android:fontFamily="@font/vazir" />
+
+        <RadioButton
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:buttonTint="@color/main"
+            android:text="گزینه ۲"
+            android:fontFamily="@font/vazir" />
+
+        <RadioButton
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:buttonTint="@color/main"
+            android:text="گزینه ۳"
+            android:fontFamily="@font/vazir" />
+
+        <RadioButton
+            android:id="@+id/option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:buttonTint="@color/main"
+            android:text="گزینه ۴"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/vazir" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:textColor="@color/green_dark"
+        android:background="@drawable/green_background"
+        android:text="پاسخ درست"
+        android:visibility="gone"
+        android:fontFamily="@font/vazir" />
+</LinearLayout>

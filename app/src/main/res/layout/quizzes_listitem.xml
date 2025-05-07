@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/grey_background"
+    android:layoutDirection="rtl"
+    android:gravity="center"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="30dp"
+    android:id="@+id/item">
+
+    <TextView
+        android:id="@+id/grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:text="@string/grade_text"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:fontFamily="@font/vazir" />
+
+    <TextView
+        android:id="@+id/quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textColor="@color/main"
+        android:text="@string/quiz_text"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/grade"
+        android:fontFamily="@font/vazir" />
+
+</RelativeLayout>

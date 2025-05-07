@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/grey_background"
+    android:layoutDirection="rtl"
+    android:gravity="center"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="30dp"
+    android:id="@+id/item">
+
+    <!-- آیکون حذف -->
+    <ImageView
+        android:id="@+id/delete_btn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_delete"
+        android:tint="@color/accent2"
+        android:contentDescription="حذف آزمون"
+        tools:ignore="UseAppTint" />
+
+
+    <!-- عنوان آزمون -->
+    <TextView
+        android:id="@+id/quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textColor="@color/main"
+        android:text="عنوان آزمون"
+        android:textStyle="bold"
+        android:fontFamily="@font/vazir" />
+
+</RelativeLayout>
